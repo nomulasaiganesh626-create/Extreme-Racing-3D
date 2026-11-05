@@ -1,0 +1,14 @@
+VERSION 0.3.0 — 2026-11-04
+- Added reusable procedural vehicle model builder in scripts/car_model.gd.
+- Replaced simple box cars with four distinct tapered coupe/hypercar silhouettes.
+- Batched body parts by material and used MultiMesh for tyres, alloy rims and hubs.
+- Improved garage three-quarter preview and added a display plinth.
+- Added moving AI traffic recycling during races.
+- Added editable LAN host IP field and connection status callbacks.
+- Added upgrade MAXED state and RESET TUNING control.
+- Disabled real-time shadows in the race and garage preview for mobile performance.
+
+Known limitations
+- No Godot runtime or Android export build was available in the build environment.
+- The car models are generated low-poly prototypes, not photorealistic production assets.
+- Multiplayer remains experimental LAN transform synchronization, not internet matchmaking.

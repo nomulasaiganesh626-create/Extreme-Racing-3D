@@ -1,0 +1,31 @@
+; Engine configuration file.
+config_version=5
+
+[application]
+config/name="Extreme Racing 3D"
+config/version="0.3.0"
+run/main_scene="res://main.tscn"
+config/features=PackedStringArray("4.3", "GL Compatibility")
+config/description="Original mobile arcade racing prototype with batched supercar models and garage customization"
+
+[display]
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/stretch/mode="canvas_items"
+
+[display/window/handheld]
+orientation=1
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/default_filters/use_nearest_mipmap_filter=false
+
+[input]
+accelerate={"deadzone":0.5,"events":[{"type":"key","keycode":87},{"type":"key","keycode":4194320}]}
+brake={"deadzone":0.5,"events":[{"type":"key","keycode":83},{"type":"key","keycode":4194322}]}
+steer_left={"deadzone":0.5,"events":[{"type":"key","keycode":65},{"type":"key","keycode":4194311}]}
+steer_right={"deadzone":0.5,"events":[{"type":"key","keycode":68},{"type":"key","keycode":4194313}]}
+nitro={"deadzone":0.5,"events":[{"type":"key","keycode":32}]}
